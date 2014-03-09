@@ -10,7 +10,7 @@ $login          = isset($argv[1]) ? $argv[1] : "";
 $password       = isset($argv[2]) ? $argv[2] : "";
 
 # Spreedsheet key / sheet number
-$spreadsheet    = "0AivF5CjWZDOOdEg5UUpLT1p0dGM3elFvOFVlSlh4REE";
+$spreadsheet    = "__PLACE SPREADSHEET KEY HERE__";
 $sheet_number   = 1;
 
 # Parser to use
