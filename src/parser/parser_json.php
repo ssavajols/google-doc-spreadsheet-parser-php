@@ -13,7 +13,7 @@ class Parser_json {
     # DATA ARRAY
     $data = array();
 
-    foreach ($response->feed->entry as $entry) {
+    foreach ($response->entry as $entry) {
       $key = $this->_get_value($entry, 'key');
       $value = $this->_get_value($entry, 'value');
       $data[$key] = $value;
