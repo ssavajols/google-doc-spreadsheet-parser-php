@@ -34,7 +34,6 @@ class google_spreadsheet {
 
     public function query() {
 
-        $alt = "json";
         $key = $this->_spreasheet;
         $sheet = $this->_sheet_number;
 
@@ -110,7 +109,7 @@ class google_spreadsheet {
             $this->_log($url, $response);
         }
 
-        return $this->_execute_parser(json_decode($response));
+        return $this->_execute_parser(simplexml_load_string($response));
     }
 
     private function _execute_parser($response){
