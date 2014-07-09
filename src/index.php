@@ -11,7 +11,7 @@ $password       = isset($argv[2]) ? $argv[2] : "";
 
 # Spreedsheet key / sheet number
 $spreadsheet    = "__PLACE SPREADSHEET KEY HERE__";
-$sheet_number   = 1;
+$sheet_number   = "default";
 
 # Parser to use
 $parser         = "parser_json";
